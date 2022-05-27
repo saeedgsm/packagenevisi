@@ -22,6 +22,9 @@ class SurveyServiceProvider extends ServiceProvider
             ],
             'config'=>[
                 "$basePath\\src\\config\\"=>config_path()
+            ],
+            'public'=>[
+                "$basePath\\src\\public\\"=>public_path('assets/css')
             ]
         ];
         foreach ($arrPublishable as $group => $paths) {
